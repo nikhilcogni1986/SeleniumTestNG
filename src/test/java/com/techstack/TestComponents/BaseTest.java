@@ -32,8 +32,8 @@ public class BaseTest
         System.out.println(rootDir);
         FileInputStream fis = new FileInputStream(rootDir+"\\src\\main\\java\\com\\techstack\\Resources\\global.properties");
         prop.load(fis);
-
-        switch (prop.getProperty("browser"))
+        String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") : prop.getProperty("browser");
+        switch (browserName)
         {
             case "Chrome":
                 driver = new ChromeDriver();

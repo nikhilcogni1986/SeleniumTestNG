@@ -1,0 +1,10 @@
+Maven command to run from command line
+
+1.mvn test - Looks for all the file containing @test and executes it.
+
+2.mvn test -Dbrowser=<browserName>
+Executes the tests in specified browser.
+mvn test -Dbrowser=Chrome
+mvn test -Dbrowser=Firefox
+mvn test -Dbrowser=Edge
+
