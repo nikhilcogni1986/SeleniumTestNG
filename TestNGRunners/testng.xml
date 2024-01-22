@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ecommerce Test Suite">
+
+    <listeners>
+        <listener class-name="com.techstack.TestComponents.Listeners"> </listener>
+    </listeners>
+
+    <test thread-count="2" name="ECommerceE2ETest">
+        <classes>
+            <class name="com.techstack.Tests.ECommerceE2ETest"/>
+        </classes>
+    </test>
+    <test thread-count="2" name="ErrorValidations">
+        <classes>
+            <class name="com.techstack.Tests.ErrorValidations"/>
+        </classes>
+    </test>
+</suite>
