@@ -8,3 +8,13 @@ mvn test -Dbrowser=Chrome
 mvn test -Dbrowser=Firefox
 mvn test -Dbrowser=Edge
 
+3. Setting up Selenium Grid
+Create a folder copy the below
+Selenium Server Jar
+Browser drivers
+
+Java - jar <selenium Server Jar> file name
+
+4. Registering a node on same machine where Hub is present
+Java -jar <selenium Jar file> node --detect-drivers true
+
